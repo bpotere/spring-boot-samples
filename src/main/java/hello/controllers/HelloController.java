@@ -28,7 +28,6 @@ public class HelloController {
 	// Handled by the global exception handler, except it shouldn't throw one ever
     @RequestMapping("/")
     public String index() {
-    	LOGGER.debug("Sending debug greetings");
     	LOGGER.info("Sending greetings");
         return "Greetings from Spring Boot!";
     }
